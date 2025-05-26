@@ -9,8 +9,8 @@ import TechStack from "@/components/TechStack";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-black text-white text-base md:text-lg">
-      <nav className="sticky top-0 z-50 bg-zinc-900 px-6 py-2 flex gap-4 justify-center backdrop-blur-md rounded-none">
+    <div className="min-h-screen bg-black text-white text-lg md:text-xl">
+      <nav className="sticky top-0 z-50 bg-zinc-900 px-6 py-3 flex gap-6 justify-center backdrop-blur-md rounded-none text-base md:text-lg">
         <a href="#about" className="text-gray-400 hover:text-white">About me</a>
         <a href="#interview" className="text-gray-400 hover:text-white">Interview</a>
         <a href="#skills" className="text-gray-400 hover:text-white">기술스택</a>
@@ -21,42 +21,42 @@ export default function Home() {
         <div className="flex justify-center mb-8">
           <Image src="/logo.jpg" alt="로고" width={300} height={300} className="rounded-full" />
         </div>
-        <h1 className="text-4xl md:text-5xl font-bold mb-2">안녕하세요,</h1>
-        <h2 className="text-3xl md:text-5xl font-bold mb-2">백엔드 개발자</h2>
-        <h2 className="text-3xl md:text-5xl font-bold text-blue-500 mb-8">김태헌입니다.</h2>
-        <p className="text-gray-400 max-w-xl mx-auto mb-8">
+        <h1 className="text-5xl md:text-6xl font-bold mb-2">안녕하세요,</h1>
+        <h2 className="text-4xl md:text-6xl font-bold mb-2">백엔드 개발자</h2>
+        <h2 className="text-4xl md:text-6xl font-bold text-blue-500 mb-8">김태헌입니다.</h2>
+        <p className="text-gray-400 max-w-xl mx-auto mb-8 text-lg md:text-xl">
           Java를 중심으로 웹 프로젝트를 개발합니다.
           <br />
           왜?를 생각하며 집요하게 물고 늘어지려고 합니다.
         </p>
-        <Button variant="outline" className="rounded-full px-6 mb-8">
+        <Button variant="outline" className="rounded-full px-8 py-3 mb-8 text-base md:text-lg">
           이력서 다운로드 <span className="ml-2">↓</span>
         </Button>
       </header>
 
       {/* About Me 섹션 */}
       <section id="about" className="container mx-auto py-16 bg-zinc-900">
-        <h2 className="text-5xl font-bold mb-4 px-6">About me</h2>
+        <h2 className="text-6xl md:text-6xl font-bold mb-4 px-6">About me</h2>
         <div className="flex flex-col md:flex-row items-center justify-center gap-8 px-6">
           <div className="md:w-1/2 flex justify-center">
             <Image src="/logo2.jpg" alt="아바타" width={300} height={300} className="h-auto" />
           </div>
           <div className="md:w-1/2">
             <div className="flex flex-wrap gap-2 mb-8">
-              <span className="bg-zinc-800 px-3 py-1 rounded-full text-sm">#열정적인</span>
-              <span className="bg-zinc-800 px-3 py-1 rounded-full text-sm">#책임감있는</span>
-              <span className="bg-zinc-800 px-3 py-1 rounded-full text-sm">#트렌드 수용</span>
-              <span className="bg-zinc-800 px-3 py-1 rounded-full text-sm">#끊임없는 배움</span>
+              <span className="bg-zinc-800 px-4 py-2 rounded-full text-base">#열정적인</span>
+              <span className="bg-zinc-800 px-4 py-2 rounded-full text-base">#책임감있는</span>
+              <span className="bg-zinc-800 px-4 py-2 rounded-full text-base">#트렌드 수용</span>
+              <span className="bg-zinc-800 px-4 py-2 rounded-full text-base">#끊임없는 배움</span>
             </div>
-            <p className="text-lg text-white font-semibold mb-2">
+            <p className="text-xl md:text-2xl text-white font-semibold mb-3">
               직관적인 편리함을 위한 개발
             </p>
-            <p className="text-gray-400 text-sm leading-relaxed">
+            <p className="text-gray-400 text-base md:text-lg leading-relaxed">
               문제 해결은 어릴 때부터의 즐거운 놀이였습니다.<br />
               사용자 입장에서 작동하는 서비스를 만들고자, 복잡함은 감추고 본질만 남기는 개발을 지향합니다.<br />
               작은 불편을 놓치지 않고, 흐름을 부드럽게 만드는 코드를 고민합니다.
             </p>
-            <Button variant="outline" className="rounded-full px-6 mt-6">
+            <Button variant="outline" className="rounded-full px-8 py-3 mt-6 text-base md:text-lg">
               팀원 리뷰 보기 <span className="ml-2">→</span>
             </Button>
           </div>
@@ -65,11 +65,11 @@ export default function Home() {
 
       {/* 인터뷰 섹션 */}
       <section id="interview" className="container mx-auto py-16">
-        <h2 className="text-5xl font-bold mb-16 px-6">Interview</h2>
+        <h2 className="text-6xl md:text-6xl font-bold mb-16 px-6">Interview</h2>
         <div className="grid gap-8 px-6">
           <div className="bg-zinc-900 p-8 rounded-lg">
-            <h3 className="text-xl font-bold mb-4">Q. 협업 시 가장 중요하게 생각하는 부분은?</h3>
-            <p className="text-gray-400">
+            <h3 className="text-2xl md:text-3xl font-bold mb-4">Q. 협업 시 가장 중요하게 생각하는 부분은?</h3>
+            <p className="text-gray-400 text-base md:text-lg leading-relaxed">
               원활한 협업을 위해 <span className="text-white">소통</span>을 최우선으로 생각합니다.
               <br />
               작업 내용을 투명하게 공유하고, 문제가 생기면 빠르게 공유하여 함께 해결하려고 노력합니다.
@@ -79,8 +79,8 @@ export default function Home() {
           </div>
 
           <div className="bg-zinc-900 p-8 rounded-lg">
-            <h3 className="text-xl font-bold mb-4">Q. 본인의 강점은 무엇이라고 생각하나요?</h3>
-            <p className="text-gray-400">
+            <h3 className="text-2xl md:text-3xl font-bold mb-4">Q. 본인의 강점은 무엇이라고 생각하나요?</h3>
+            <p className="text-gray-400 text-base md:text-lg leading-relaxed">
               <span className="text-white">문제 해결 능력과 끈기</span>입니다.
               <br />
               어려운 문제를 마주했을 때 포기하지 않고 끝까지 파고들며, 다양한 방법을 시도해 해결책을 찾아내는 과정을 즐깁니다.
@@ -90,8 +90,8 @@ export default function Home() {
           </div>
 
           <div className="bg-zinc-900 p-8 rounded-lg">
-            <h3 className="text-xl font-bold mb-4">Q. 기술 외적으로 중요하게 생각하는 역량은?</h3>
-            <p className="text-gray-400">
+            <h3 className="text-2xl md:text-3xl font-bold mb-4">Q. 기술 외적으로 중요하게 생각하는 역량은?</h3>
+            <p className="text-gray-400 text-base md:text-lg leading-relaxed">
               <span className="text-white">책임감과 협업 능력</span>을 가장 중요하게 생각합니다.
               <br />
               개발자는 혼자 일하는 직업이 아니라 팀과 함께 완성해 나가는 직업이라고 생각합니다.
@@ -108,24 +108,24 @@ export default function Home() {
 
       {/* 프로젝트 섹션 */}
       <section id="projects" className="container mx-auto py-16">
-        <h2 className="text-5xl font-bold mb-16 px-6">프로젝트</h2>
+        <h2 className="text-6xl md:text-6xl font-bold mb-16 px-6">프로젝트</h2>
         <div className="grid gap-6 px-6 max-w-6xl mx-auto">
-          <div className="border border-green-500 rounded-2xl p-6 bg-zinc-900">
-            <h1 className="text-5xl font-bold text-green-400 mb-1">Localens</h1>
-            <h3 className="text-xl font-bold text-green-400 mb-3">상권 분석 플랫폼</h3>
+          <div className="border border-green-500 rounded-2xl p-8 bg-zinc-900">
+            <h1 className="text-6xl md:text-7xl font-bold text-green-400 mb-2">Localens</h1>
+            <h3 className="text-2xl md:text-3xl font-bold text-green-400 mb-4">상권 분석 플랫폼</h3>
 
-            <div className="flex flex-wrap gap-2 mb-3">
+            <div className="flex flex-wrap gap-2 mb-4">
               {["Spring Boot", "MySQL", "InfluxDB", "AWS", "Docker", "Redis", "Python", "Pandas"].map((tech) => (
-                <span key={tech} className="text-sm bg-white text-black px-2 py-1 rounded-full">{tech}</span>
+                <span key={tech} className="text-base bg-white text-black px-3 py-2 rounded-full">{tech}</span>
               ))}
             </div>
 
-            <div className="text-xs text-gray-400 mb-2">
-              2024.09 ~ 2025.12 (4명) / 2025.01 ~ 2025.02 (리팩토링)(2명)
+            <div className="text-sm md:text-base text-gray-400 mb-3">
+              2024.09 ~ 2024.12 (4명) / 2025.01 ~ 2025.02 (리팩토링)(2명)
             </div>
 
-            <p className="text-base text-gray-300 mb-1">통신사 기반 유동인구 데이터를 활용한 상권 분석 플랫폼</p>
-            <ul className="text-base text-gray-400 list-disc list-inside">
+            <p className="text-lg md:text-xl text-gray-300 mb-2">통신사 기반 유동인구 데이터를 활용한 상권 분석 플랫폼</p>
+            <ul className="text-base md:text-lg text-gray-400 list-disc list-inside space-y-1">
               <li>시간대별 유동인구 및 체류인구 분석 지표 제공</li>
               <li>InfluxDB 기반 시계열 데이터 최적화 저장 및 쿼리</li>
               <li>사용자 정의 파생 지표 생성 및 시각화</li>
@@ -140,14 +140,14 @@ export default function Home() {
       {/* 감사 인사 섹션 */}
       <section className="py-16 bg-white text-black">
         <div className="container mx-auto text-center px-6">
-          <h2 className="text-7xl font-bold mb-4">Thank You</h2>
-          <p className="text-2xl mb-8">봐주셔서 감사합니다 :)</p>
-          <p className="text-gray-600 max-w-2xl mx-auto mb-8">
+          <h2 className="text-8xl md:text-7xl font-bold mb-4">Thank You</h2>
+          <p className="text-3xl md:text-3xl mb-8">봐주셔서 감사합니다 :)</p>
+          <p className="text-gray-600 max-w-2xl mx-auto mb-8 text-lg md:text-xl leading-relaxed">
             백엔드 개발자로 성장하기 위해 낯선 기술에도 적극적으로 도전하고,
             <br />
             항상 사용자의 관점에서 생각하며 사용하기 좋은 서비스를 만들고 싶습니다.
           </p>
-          <div className="flex justify-center gap-4">
+          <div className="flex justify-center gap-4 text-lg md:text-xl">
             <Link href="#" className="border-b-2 border-black pb-1">
               GitHub
             </Link>
@@ -156,7 +156,7 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        <div className="container mx-auto mt-16 text-center text-gray-500 text-sm">
+        <div className="container mx-auto mt-16 text-center text-gray-500 text-base">
           <p>Copyright 2025. kimtaeheon all rights reserved.</p>
           <p>React, Styled Components, Tailwind CSS 기반으로 제작된 사이트입니다.</p>
         </div>
