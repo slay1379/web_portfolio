@@ -9,7 +9,7 @@ import TechStack from "@/components/TechStack";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen bg-black text-white text-base md:text-lg">
       <nav className="sticky top-0 z-50 bg-zinc-900 px-6 py-2 flex gap-4 justify-center backdrop-blur-md rounded-none">
         <a href="#about" className="text-gray-400 hover:text-white">About me</a>
         <a href="#interview" className="text-gray-400 hover:text-white">Interview</a>
@@ -36,10 +36,10 @@ export default function Home() {
 
       {/* About Me 섹션 */}
       <section id="about" className="container mx-auto py-16 bg-zinc-900">
-        <h2 className="text-5xl font-bold mb-16 px-6">About me</h2>
+        <h2 className="text-5xl font-bold mb-4 px-6">About me</h2>
         <div className="flex flex-col md:flex-row items-center justify-center gap-8 px-6">
           <div className="md:w-1/2 flex justify-center">
-            <Image src="/avatar.png" alt="아바타" width={300} height={300} className="h-auto" />
+            <Image src="/logo2.jpg" alt="아바타" width={300} height={300} className="h-auto" />
           </div>
           <div className="md:w-1/2">
             <div className="flex flex-wrap gap-2 mb-8">
@@ -48,7 +48,15 @@ export default function Home() {
               <span className="bg-zinc-800 px-3 py-1 rounded-full text-sm">#트렌드 수용</span>
               <span className="bg-zinc-800 px-3 py-1 rounded-full text-sm">#끊임없는 배움</span>
             </div>
-            <Button variant="outline" className="rounded-full px-6">
+            <p className="text-lg text-white font-semibold mb-2">
+              직관적인 편리함을 위한 개발
+            </p>
+            <p className="text-gray-400 text-sm leading-relaxed">
+              문제 해결은 어릴 때부터의 즐거운 놀이였습니다.<br />
+              사용자 입장에서 작동하는 서비스를 만들고자, 복잡함은 감추고 본질만 남기는 개발을 지향합니다.<br />
+              작은 불편을 놓치지 않고, 흐름을 부드럽게 만드는 코드를 고민합니다.
+            </p>
+            <Button variant="outline" className="rounded-full px-6 mt-6">
               팀원 리뷰 보기 <span className="ml-2">→</span>
             </Button>
           </div>
